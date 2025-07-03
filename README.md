@@ -1,12 +1,25 @@
-# React + Vite
+# Drag-and-Drop Task Organizer with dnd-kit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React app demonstrates how to build a draggable task organizer using the **dnd-kit** library. Tasks are grouped by dates ("days") and can be reordered within a day or moved between different days by dragging and dropping.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Drag and drop tasks within the same day to reorder.
+* Move tasks between different days.
+* Supports mouse, touch, and keyboard sensors.
+* Prevents dragging outside the browser window.
+* Visual drag overlay for smooth dragging experience.
 
-## Expanding the ESLint configuration
+## How it works
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Each day is a droppable and sortable container.
+* Tasks are draggable items inside their respective days.
+* The app maintains the task order and grouping in React state.
+* When dragging over another day or task, the app updates state accordingly.
+
+## Usage
+
+1. Run the app in a React environment.
+2. Drag tasks to reorder within the same day or move them to another day.
+3. The task lists update instantly, reflecting the changes.
+
