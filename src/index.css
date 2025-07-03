@@ -1,0 +1,45 @@
+#root{
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  height: 100vh;
+}
+.parrent{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+*{
+  margin: 0;
+}
+.day{
+  background-color: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0,0,0,0.2);
+  width: 300px;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  border-radius: 10px;
+  transition: 0.3s ease all;
+}
+.item{
+  background-color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+}
+.item.dragging{
+  background-color: rgb(174, 174, 174);
+  border: none;
+
+  font-size: 0;
+}
+.item.dragging > *{
+  display: none;
+}
